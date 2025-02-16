@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  height: 100vh;
+}
+
+.resgister-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color:rgb(239, 240, 255) ;
+}
+.nav-page1{
+  background-color:rgb(200, 202, 231) ;
+}
+
+.filters{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 0 3px gray;
+}
+
+.anticons svg{
+  font-size: 20px;
+  cursor: pointer;
+}
+.active-icon{
+  color: white;
+}
+.inactive-icon{
+  color: gray;
+}
+.switch-icon{
+  border:1px solid white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #4472a0;
+  color: white;
+}
+/* Navbar Styling */
+.nav-page {
+  background-color: #2a435c;  /* Dark blue background */
+  padding: 12px 20px;
+  box-shadow: 0 2px 10px rgba(166, 196, 232, 0.462);
+
+}
+
+/* Navbar Brand (Title) */
+.nav-page .navbar-brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ECF0F1;  /* Light gray text */
+}
+
+/* User Name & Icon */
+.nav-page .nav-link {
+  font-size: 16px;
+  color: #ECF0F1 !important; /* Light gray text */
+  display: flex;
+  align-items: center;
+}
+
+.nav-page .nav-link:hover {
+  color: #BDC3C7 !important; /* Light gray on hover */
+}
+
+/* Logout Button */
+.nav-page .btn-danger {
+  background-color: #E74C3C; /* Red */
+  border: none;
+  transition: 0.3s;
+}
+
+.nav-page .btn-danger:hover {
+  background-color: #C0392B; /* Darker Red */
+}
+
+/* Navbar Toggler (Mobile) */
+.navbar-toggler {
+  border-color: #ECF0F1;
+}
+
+.navbar-toggler-icon {
+  background-color: #ECF0F1;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .nav-page .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
